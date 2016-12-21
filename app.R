@@ -1,16 +1,16 @@
 # Load packages and install them if they are missing
 
-if(!library(shiny)) {
+if(!require(shiny)) {
 install.packages("shiny", repos="http://cran.us.r-project.org")
 library(shiny)
 }
 
-if(!library(shinydashboard)) {
+if(!require(shinydashboard)) {
 install.packages("shinydashboard", repos="http://cran.us.r-project.org")
 library(shinydashboard)
 }
 
-if(!library(tidyr)) {
+if(!require(tidyr)) {
 install.packages("tidyr", repos="http://cran.us.r-project.org")
 library(tidyr)
 }
