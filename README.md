@@ -11,5 +11,5 @@ You may need to restart R to make sure the newly-installed packages work properl
 After all these packages are installed, you can run this app by running the following code in R:
 
 ```s
-runGitHub("reshape", "panduze")
+shiny::runGitHub("reshape", "panduze")
 ```
