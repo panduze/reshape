@@ -10,7 +10,7 @@ ui <- dashboardPage(
   
   # SIDEBAR
   dashboardSidebar(
-    fileInput("file1", "Upload a dataset",
+    fileInput("file1", "Upload a CSV dataset",
                                    accept=c("text/csv",
                                             "text/comma-separated-values,text/plain",
                                             ".csv")),
