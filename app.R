@@ -1,9 +1,3 @@
-# Data Reshapping Tool
-# Author: Pierre Anduze
-
-# This app as for an aim to provide a friendly-user interface of the "gather" function (tidyr package).
-## app.R ##
-
 library(shiny)
 library(shinydashboard)
 library(tidyr)
