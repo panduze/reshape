@@ -1,6 +1,22 @@
+# Load packages and install them if they are missing
+
+if(!library(shiny)) {
+install.packages("shiny", repos="http://cran.us.r-project.org")
 library(shiny)
+}
+
+if(!library(shinydashboard)) {
+install.packages("shinydashboard", repos="http://cran.us.r-project.org")
 library(shinydashboard)
+}
+
+if(!library(tidyr)) {
+install.packages("tidyr", repos="http://cran.us.r-project.org")
 library(tidyr)
+}
+
+
+# APP
 
 
 ui <- dashboardPage(
