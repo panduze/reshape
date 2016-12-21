@@ -6,7 +6,7 @@ library(tidyr)
 ui <- dashboardPage(
   
   # HEADER
-  dashboardHeader(title = "Data reshapping Tool"),
+  dashboardHeader(title = "Data Reshaping Tool"),
   
   # SIDEBAR
   dashboardSidebar(
@@ -22,14 +22,14 @@ ui <- dashboardPage(
   # BODY
   dashboardBody(
     
-    box(title = "Reshapped dataset:",
+    box(title = "Reshaped dataset:",
         width = 11,
         status = "primary",
         solidHeader = TRUE,
         collapsible = TRUE,
         dataTableOutput("contents2")),
     
-    downloadButton("downloadData","Download reshapped dataset")
+    downloadButton("downloadData","Download reshaped dataset")
   )
 )
 
