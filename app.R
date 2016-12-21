@@ -1,20 +1,22 @@
-# shiny to build the app
+# Load packages and install them if they are missing
+
 if(!library(shiny)) {
 install.packages("shiny", repos="http://cran.us.r-project.org")
 library(shiny)
 }
 
-# ggplot2 for the plot
 if(!library(shinydashboard)) {
 install.packages("shinydashboard", repos="http://cran.us.r-project.org")
 library(shinydashboard)
 }
 
-# tidyr to tidy the data
 if(!library(tidyr)) {
 install.packages("tidyr", repos="http://cran.us.r-project.org")
 library(tidyr)
 }
+
+
+# APP
 
 
 ui <- dashboardPage(
