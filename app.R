@@ -1,22 +1,6 @@
-# Load packages and install them if they are missing
-
-if(!require(shiny)) {
-install.packages("shiny", repos="http://cran.us.r-project.org")
 library(shiny)
-}
-
-if(!require(shinydashboard)) {
-install.packages("shinydashboard", repos="http://cran.us.r-project.org")
 library(shinydashboard)
-}
-
-if(!require(tidyr)) {
-install.packages("tidyr", repos="http://cran.us.r-project.org")
 library(tidyr)
-}
-
-
-# APP
 
 
 ui <- dashboardPage(
@@ -26,12 +10,16 @@ ui <- dashboardPage(
   
   # SIDEBAR
   dashboardSidebar(
+    
     fileInput("file1", "Upload a CSV dataset",
                                    accept=c("text/csv",
                                             "text/comma-separated-values,text/plain",
                                             ".csv")),
+    
     selectInput("cols", "Columns:", choices = NULL, multiple = TRUE),
+    
     textInput("key", "Insert new Key column name:"),
+    
     textInput("value", "Insert new data name:")
     ),
     
