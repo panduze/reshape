@@ -2,6 +2,8 @@ library(shiny)
 library(shinydashboard)
 library(tidyr)
 
+# max input file size to 250 MB
+options(shiny.maxRequestSize = 250 * 1024^2)
 
 ui <- dashboardPage(
   
